@@ -1,11 +1,9 @@
-import React from 'react';
-import './App.css';
-import Component from './177.ReduxComponentsConnection'
+import React from "react";
+import "./App.css";
+import Component from "./178.MultipleReducers";
 
 function App() {
-  return (
-    <Component />
-  );
+  return <Component />;
 }
 
 export default App;
