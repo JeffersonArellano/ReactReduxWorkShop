@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Component from './176.ReduxStoreReducerAction'
+import Component from './177.ReduxComponentsConnection'
 
 function App() {
   return (

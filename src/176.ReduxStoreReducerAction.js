@@ -1,4 +1,5 @@
 import React from "react"
+import './176.store'
 
 const Component = () => {
 
