@@ -1,6 +1,4 @@
-//Actions constants names
-export const INCREMENT = "INCREMENT";
-export const DECREMENT = "DECREMENT";
+import { INCREMENT, DECREMENT } from "../actions/178.counterActions";
 
 /* Reducer is a pure function that returns
 actual state
