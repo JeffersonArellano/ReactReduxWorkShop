@@ -4,12 +4,13 @@ import store from "./redux/178.store";
 // import Counter from "./components/178.Counter";
 // import UserInfo from "./components/178.Info";
 //import Fruits from "./components/181.Fruits";
-import Todos from "./components/Todos/182.Todos";
+//import Todos from "./components/Todos/182.Todos";
+import Controller from "./components/185.Controller";
 const Component = () => {
   return (
     <Provider store={store}>
-      <Todos />
-      {/* <UserInfo />
+      <Controller></Controller>
+      {/*<Todos /> <UserInfo />
       <Counter /> */}
     </Provider>
   );

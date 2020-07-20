@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./reducers/178.index";
 import logger from "redux-logger";
+import thunk from "redux-thunk";
 
 //Middleware
 
@@ -36,7 +37,7 @@ const confirmDeleteTodo = (store) => (next) => (action) => {
 /*Store stores the state*/
 const store = createStore(
   rootReducer,
-  applyMiddleware(confirmDeleteTodo, logger)
+  applyMiddleware(confirmDeleteTodo, logger, thunk)
 );
 
 export default store;
