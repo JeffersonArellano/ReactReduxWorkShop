@@ -5,13 +5,19 @@ import store from "./redux/178.store";
 // import UserInfo from "./components/178.Info";
 //import Fruits from "./components/181.Fruits";
 //import Todos from "./components/Todos/182.Todos";
-import Controller from "./components/185.Controller";
+//import Controller from "./components/185.Controller";
+import Blog from "./components/186.Blog";
 const Component = () => {
   return (
     <Provider store={store}>
-      <Controller></Controller>
-      {/*<Todos /> <UserInfo />
-      <Counter /> */}
+      <Blog />
+
+      {/*
+      <Controller/> 
+      <Todos /> 
+      <UserInfo />
+      <Counter /> 
+      */}
     </Provider>
   );
 };
