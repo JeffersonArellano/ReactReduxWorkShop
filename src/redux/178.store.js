@@ -1,7 +1,8 @@
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./reducers/178.index";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
 
 //Middleware
 
@@ -34,10 +35,18 @@ const confirmDeleteTodo = (store) => (next) => (action) => {
   //   }
 };
 
+//const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = composeWithDevTools({
+  name: "Redux",
+  realtime: true,
+  trace: true,
+  traceLimit: 20,
+});
+
 /*Store stores the state*/
 const store = createStore(
   rootReducer,
-  applyMiddleware(confirmDeleteTodo, logger, thunk)
+  composeEnhancers(applyMiddleware(logger, thunk))
 );
 
 export default store;
